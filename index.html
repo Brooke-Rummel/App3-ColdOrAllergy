@@ -166,8 +166,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> <!--below is content for page 6-->
 		<p>Do you have aches and pains?<p/> <!--question 6 header-->
-		<a href="#seven"   "allergyAdd();" class=w3-btn w3-black"> No<a/> <!--no button for allergies adds to the results-->
-		<a href="#seven"   "coldAdd();" class=w3-btn w3-black"> Yes<a/> <!--yes button for cold adds to the results-->
+		<a href="#results"   "allergyAdd();" class=w3-btn w3-black"> No<a/> <!--no button for allergies adds to the results and brings it to the results page-->
+		<a href="#results"   "coldAdd();" class=w3-btn w3-black"> Yes<a/> <!--yes button for cold adds to the results and brings it to the results page-->
 	</div> <!--end of Question 6 content part of the page-->	
 
 </div> <!--start of Results page-->									   
@@ -180,9 +180,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> <!--below is content for results page-->
 		<p id="results"></p> <!--results paragraph--> 
-		var resultText = document.getElementById("results"); //formula for results page//
+		<a href="#one" class="w3-btn w3-black"> results> </a> <!--results button-->
+		var resultText = document.getElementById("results");
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; //command changes what is in line 177//
 </div> <!--end of Results page-->
-
+	
 </body>
 </html>
