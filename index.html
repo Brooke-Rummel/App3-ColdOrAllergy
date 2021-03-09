@@ -97,90 +97,94 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         	<p>Are your eyes watery or itchy?</p> <!--I changed Question 1 to are your eyes watery or itchy?-->
-		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--I inserted this yes button and allowed it to be added once to the results if it is clicked on-->
-		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!--I inserted this no button and allowed it to be added once to the results if it is clicked on-->
+		<a href="#two"  "allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--I inserted this yes button and allowed it to be added once to the results if it is clicked on-->
+		<a href="#two"  "coldAdd();" class="w3-btn w3-black"> No</a> <!--I inserted this no button and allowed it to be added once to the results if it is clicked on-->
 	 </div><!-- /content -->
 
-    	</div>
-</div>
+</div> <!--start of page 2-->
 
 <div class="page" id="two">
-	<div class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have a fever?</p>
-		<a href="#two"   onclick="allergyAdd();" class=w3-btn w2-black">  No</a> <!--I inserted this no button for allergies and allowed it to be added once to the results page-->
-		<a href="#two"   onclick="coldAdd();" class="w3-btn w3-black">Yes<a/> <!--I inserted this yes button for cold and allowed it to be added once to the results page-->
+		<p>Do you have a fever?</p> <!--Question2-->
+		<a href="#three"   "allergyAdd();" class="w3-btn w3-black"> No</a> <!--I inserted this no button for allergies and allowed it to be added once to the results page-->
+		<a href="#three"   "coldAdd();" class="w3-btn w3-black"> Yes<a/> <!--I inserted this yes button for cold and allowed it to be added once to the results page-->
 	</div><!--/end of Question 2 page-->
-	</div>
-</div>	<!--start of Question 3 page-->
+
+</div>	<!--start of page 3-->
 
 <div class="page" id="three"> <!--start page 3-->
-	 <div class="w3-container w3-flat-carrot"> <!--page 3-->
-		  <h1>Question 3</h1><!--this is the heading-->
+	 <div id="header" class="w3-container w3-flat-carrot"> <!--page 3-->
+		  <h1>Question 3</h1> <!--this is the heading-->
+		 
 	 </div> <!--this is so the below content is a page-->
+	
 	 <div id="content" class="w3-container"> <!--below is the content on page 3-->
 		 <p>Do you have a sore throat?</p> <!--question on the page-->
-		 <a href="two"    onclick="allergyAdd();" class=w3-btn w2-black">  No<a/> <!--no button for allergies adds to results-->
-		 <a href="two"    onclick="coldAdd();" class=w3-btn w2-black">  Yes<a/> <!--yes button for cold adds to results-->
-	</div> <!--end of Question 3 content part of pagepage-->
-</div> <!--end of Question 3 page-->						   
+		 <a href="#four"    "allergyAdd();" class=w3-btn w3-black">  No<a/> <!--no button for allergies adds to results-->
+		 <a href="#four"    "coldAdd();" class=w3-btn w3-black">  Yes<a/> <!--yes button for cold adds to results-->
+	</div> <!--end of Question 3 content part of pagepage-->						   
 
 </div>  <!--start of Question 4 page-->
 
 <div class="page" id="four"> <!--start of Question 4 page-->
-	<div class="w3-container w3-flat-carrot"> <!--page 3-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!--page 3-->
 		<h1>Question 4</h1><!--heading of Question 4 page-->
+		
 	</div> <!--starts the content below for Question 4 page-->
+	
 	<div id="content" class="w3-container"> <!--below is the content for page 4-->
 		<p>Are your symptoms seasonal or chronic?</p> <!--question 4 header-->
-		<a href="two"   onclick="allergyAdd();" class=w3-btn w2-black"> Yes<a/> <!--yes button for allergies adds to results-->
-		<a href="two"   onclick="coldAdd();" class=w3-btn w2-black"> No<a/> <!--no button for allergies adds to results-->
-	</div> <!--end of Question 4 content part of page-->
-</div> <!--end of Question 4 page-->		
+		<a href="#five"   "allergyAdd();" class=w3-btn w3-black"> Yes<a/> <!--yes button for allergies adds to results-->
+		<a href="#five"   "coldAdd();" class=w3-btn w3-black"> No<a/> <!--no button for allergies adds to results-->
+	</div> <!--end of Question 4 content part of page-->		
 									   
 </div> <!--start of Question 5 page-->	
 									   
 <div class="page" id="five"> <!--start of Question 5 page-->
-	<div class="w3-container w3-flat carrot"> <!--page 4-->
+	<div id="header" class="w3-container w3-flat carrot"> <!--page 4-->
 		<h1>Question 5</h1><!--header for page 5-->
-	</div> <!--starts the content for Question 5 page-->	
+		
+	</div> <!--starts the content for Question 5 page-->
+	
 	<div id="content" class="w3-container"> <!--below is content for page 5-->
 		<p>Do you have a rash?</p> <!--question 5 header-->
-		<a href="two"   onclick="allergyAdd();" class=w3-btn w2-black"> Yes<a/> <!--yes button for allergies adds to results-->
-		<a href="two"   onclick="coldAdd();" class=w3-btn w2-black"> No<a/> <!--no button for allergeis adds to results-->
+		<a href="#six"   "allergyAdd();" class=w3-btn w3-black"> Yes<a/> <!--yes button for allergies adds to results-->
+		<a href="#six"   "coldAdd();" class=w3-btn w3-black"> No<a/> <!--no button for allergeis adds to results-->
 	</div> <!--end of Question 5 content part of page-->
- </div> <!--end of Question 5 page-->
 									   
  </div> <!--start of Question 6 page-->	
 
 <div class="page" id="six"> <!--start of Question 6 page-->
-	<div class="w3-container w-3 flat carrot"> <!--page 5-->
-		<h1>Question 6</h1><!--header for page 6-->	
+	<div id="header" class="w3-container w-3 flat carrot"> <!--page 5-->
+		<h1>Question 6</h1><!--header for page 6-->
+		
 	</div> <!--starts content for Question 6 page-->
+	
 	<div id="content" class="w3-container"> <!--below is content for page 6-->
 		<p>Do you have aches and pains?<p/> <!--question 6 header-->
-		<a href="two"   onclick="allergyAdd();" class=w3-btn w2-black"> No<a/> <!--no button for allergies adds to the results-->
-		<a href="two"   onclick="coldAdd();" class=w3-btn w2-black"> Yes<a/> <!--yes button for cold adds to the results-->
+		<a href="#seven"   "allergyAdd();" class=w3-btn w3-black"> No<a/> <!--no button for allergies adds to the results-->
+		<a href="#seven"   "coldAdd();" class=w3-btn w3-black"> Yes<a/> <!--yes button for cold adds to the results-->
 	</div> <!--end of Question 6 content part of the page-->
+		
 </div> <!--end of Question 6 page-->	
 
 </div> <!--start of Results page-->									   
 
 </div class="page" id="results"> <!--start of Results page-->
-	<div class="w3-container w-3 flat carrot"> <!--results page-->
+	<div id="header" class="w3-container w-3 flat carrot"> <!--results page-->
 		<h1>Results</h1> <!--header for results page-->
-	</div> <!--starts the content for the results page-->	
+		
+	</div> <!--starts the content for the results page-->
+	
 	<div id="content" class="w3-container"> <!--below is content for results page-->
 		<p id="results"></p> <!--results paragraph--> 
 		var resultText = document.getElementById("results"); //formula for results page//
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; //command changes what is in line 177//
-
-<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
-</footer>
+</div> <!--end of Results page-->
 
 </body>
 </html>
