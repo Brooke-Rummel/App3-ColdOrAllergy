@@ -50,8 +50,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
 		alert(cold_count); //added to count cold//
         }
- 	function getResults()
-	{
+ 	function getResults(){
+		
 		ResultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
 	 var allergyPercent= allergy_count/6 * 100 
 	 var coldPercent= cold_count/6 * 100
@@ -119,7 +119,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p> <!--Question2-->
 		<a href="#three"   onclick="allergyAdd();" class="w3-btn w3-black"> No</a> <!--I inserted this no button for allergies and allowed it to be added once to the results page-->
-		<a href="#three"   onclick="coldAdd();" class="w3-btn w3-black"> Yes<a/> <!--I inserted this yes button for cold and allowed it to be added once to the results page-->
+		<a href="#three"   onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!--I inserted this yes button for cold and allowed it to be added once to the results page-->
 	</div><!--/end of Question 2 page-->
 
 </div>	<!--start of page 3-->
@@ -132,8 +132,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	 <div id="content" class="w3-container"> <!--below is the content on page 3-->
 		 <p>Do you have a sore throat?</p> <!--question on the page-->
-		 <a href="#four"    onclick="allergyAdd();" class=w3-btn w3-black">  No<a/> <!--no button for allergies adds to results-->
-		 <a href="#four"    onclick="coldAdd();" class=w3-btn w3-black">  Yes<a/> <!--yes button for cold adds to results-->
+		 <a href="#four"    onclick="allergyAdd();" class="w3-btn w3-black">  No</a> <!--no button for allergies adds to results-->
+		 <a href="#four"    onclick="coldAdd();" class="w3-btn w3-black">  Yes</a> <!--yes button for cold adds to results-->
 	</div> <!--end of Question 3 content part of pagepage-->						   
 
 </div>  <!--start of Question 4 page-->
@@ -146,8 +146,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> <!--below is the content for page 4-->
 		<p>Are your symptoms seasonal or chronic?</p> <!--question 4 header-->
-		<a href="#five"   onclick="allergyAdd();" class=w3-btn w3-black"> Yes<a/> <!--yes button for allergies adds to results-->
-		<a href="#five"   onclick="coldAdd();" class=w3-btn w3-black"> No<a/> <!--no button for allergies adds to results-->
+		<a href="#five"   onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--yes button for allergies adds to results-->
+		<a href="#five"   onclick="coldAdd();" class="w3-btn w3-black"> No</a> <!--no button for allergies adds to results-->
 	</div> <!--end of Question 4 content part of page-->		
 									   
 </div> <!--start of Question 5 page-->	
@@ -160,8 +160,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> <!--below is content for page 5-->
 		<p>Do you have a rash?</p> <!--question 5 header-->
-		<a href="#six"   onclick="allergyAdd();" class=w3-btn w3-black"> Yes<a/> <!--yes button for allergies adds to results-->
-		<a href="#six"   onclick="coldAdd();" class=w3-btn w3-black"> No<a/> <!--no button for allergeis adds to results-->
+		<a href="#six"   onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--yes button for allergies adds to results-->
+		<a href="#six"   onclick="coldAdd();" class="w3-btn w3-black"> No</a> <!--no button for allergeis adds to results-->
 	</div> <!--end of Question 5 content part of page-->
 									   
  </div> <!--start of Question 6 page-->	
@@ -174,8 +174,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> <!--below is content for page 6-->
 		<p>Do you have aches and pains?<p/> <!--question 6 header-->
-		<a href="#seven"   onclick="allergyAdd();" class=w3-btn w3-black"> No<a/> <!--no button for allergies adds to the results and brings it to the results page-->
-		<a href="#seven"   onclick="coldAdd();" class=w3-btn w3-black"> Yes<a/> <!--yes button for cold adds to the results and brings it to the results page-->
+		<a href="#seven"   onclick="allergyAdd();" class="w3-btn w3-black"> No</a> <!--no button for allergies adds to the results and brings it to the results page-->
+		<a href="#seven"   onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!--yes button for cold adds to the results and brings it to the results page-->
 	</div> <!--end of Question 6 content part of the page-->	
 
 </div> <!--start of Results page-->									   
