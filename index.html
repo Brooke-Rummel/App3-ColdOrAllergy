@@ -1,5 +1,5 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html> <!--shows that this is an html document-->
+<html> <!--shows that this is html script below-->
 <!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
  
 THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
@@ -26,28 +26,28 @@ https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
 	
-   <head> 
-      <title>Cold or Allergies</title>  
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <link rel="stylesheet" href="w3.css">
-      <link rel="stylesheet" href="w3-colors-flat.css">
-   </head> 
+   <head> <!--shows that this is the head of the page-->
+      <title>Cold or Allergies</title>   <!--title of page-->
+      <meta name="viewport" content="width=device-width, initial-scale=1"> <!--dimensions/way the page is viewed-->
+      <meta name="apple-mobile-web-app-capable" content="yes"> <!--fits to phone screen-->
+      <link rel="stylesheet" href="w3.css"> <!--creates sytle of each page-->
+      <link rel="stylesheet" href="w3-colors-flat.css"> <!--creates style of page-->
+   </head> <!--ends the head of page-->
 
 
-<script>
-        var allergy_count = 0;
-        var cold_count = 0;
+<script> //in Java script//
+        var allergy_count = 0; //variable for allergy so when click on button the formula knows that to add//
+        var cold_count = 0; //variable for cold so when click on button the formula knows what to add//
 
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
-		alert(allergy_count);
+        function allergyAdd(){ //starts the function of the allergy counting//
+            allergy_count = allergy_count + 1; //when click on yes/no adds one to allergy//
+		alert(allergy_count); //shows popup alert when click on button//
 
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
+        function coldAdd(){ //starts the function of the cold counting//
+            cold_count = cold_count + 1;//when click on yes/no adds one to cold//
 		alert(cold_count); //added to count cold//
         }
  	function getResults(){ //starts function for getResults//
@@ -61,12 +61,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 
-<style>	
-.body {
+<style>	/*beings style of the pages*/
+.body { /*what body of text looks like below*/
      margin: 0em;
 }
 
-.page {
+.page { /*what page of text looks like below*/
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -77,18 +77,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     background-color: hsl(0,0%,100%);
 }
 
-  .page:target {
+  .page:target { /*dimensions of page*/
     left: 0vw;
     z-index: 1;
 }Do
-</style>
+</style> <!--starts part for question pages-->
 
 <body>
-<div id="header" class="w3-container w3-flat-carrot">
+<div id="header" class="w3-container w3-flat-carrot"> <!--creates format for header of page-->
 	<h1>Cold or Allergies?</h1> <!--I changed Hello World to Cold or Allergies?-->
-</div>
+</div> <!--ends header of page-->
 	
-<div id="content" class="w3-container">
+<div id="content" class="w3-container"> <!--specifies that this is the content of the page-->
 	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
@@ -104,9 +104,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div class="page" id="one"> <!--starts page 1-->
 	<div id="header" class="w3-container w3-flat-carrot"> <!--page 1-->
 		<h1>Question 1</h1> <!--heading for page-->
-	</div>
+	</div> <!--ends header for page-->
 	
-    	<div id="content" class="w3-container">
+    	<div id="content" class="w3-container"> <!--starts content of page-->
         	<p>Are your eyes watery or itchy?</p> <!--I changed Question 1 to are your eyes watery or itchy?-->
 		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--I inserted this yes button and allowed it to be added once to the results if it is clicked on-->
 		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black"> No</a> <!--I inserted this no button and allowed it to be added once to the results if it is clicked on-->
@@ -215,11 +215,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<a onclick="getResults();"  class="w3-btn w3-black"> Get Your Results!</a> <!--results button.-->
 		<p id="Results"></p> <!--results paragraph--> 
 	
-</div>	
+</div>	<!--ends content portion of page-->
 
 <footer class="w3-bottom w3-container w3-flat-carrot"> <!--adds footer-->
 	<p>8</p> <!--labels footer-->
 </footer> <!--ends footer-->
 
 </body> <!--ends body of code-->
-</html>
+</html> <!--ends script-->
