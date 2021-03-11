@@ -50,14 +50,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
 		alert(cold_count); //added to count cold//
         }
- 	function getResults(){
-	var allergyPercent= allergy_count/6 * 100 
-	var coldPercent= cold_count/6 * 100
-	var ResultText = document.getElementById("Results");
-		ResultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
+ 	function getResults(){ //starts function for getResults//
+	var allergyPercent= allergy_count/6 * 100 //variable for allergy percent//
+	var coldPercent= cold_count/6 * 100  //variable for cold percent//
+	var ResultText = document.getElementById("Results"); //variable for the results part//
+		ResultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; //formula for the results part//
 	}
 
-  </script>
+  </script> <!--end Java Script-->
 
 
 
@@ -97,9 +97,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
-<div class="page" id="one">
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
+<div class="page" id="one"> <!--starts page 1-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!--page 1-->
+		<h1>Question 1</h1> <!--heading for page-->
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -110,12 +110,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 </div> <!--start of page 2-->
 
-<div class="page" id="two">
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1>
+<div class="page" id="two"> <!--Starts page 3-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!--page3-->
+		<h1>Question 2</h1> <!--header for page 3-->
 	</div>
 	
-	<div id="content" class="w3-container">
+	<div id="content" class="w3-container"> <!--below is content for page 3-->
 		<p>Do you have a fever?</p> <!--Question2-->
 		<a href="#three"   onclick="allergyAdd();" class="w3-btn w3-black"> No</a> <!--I inserted this no button for allergies and allowed it to be added once to the results page-->
 		<a href="#three"   onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!--I inserted this yes button for cold and allowed it to be added once to the results page-->
@@ -188,4 +188,4 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container"> <!--below is content for results page-->
 		<a onclick="getResults();"  class="w3-btn w3-black"> Get Your Results!</a> <!--results button.-->
 		<p id="Results"></p> <!--results paragraph--> 
-</body>
+</body> <!--ends body of code-->
